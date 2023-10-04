@@ -4,12 +4,14 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,14 +29,23 @@ public class MainActivity extends AppCompatActivity {
                 int id = item.getItemId();
 
 
-                if (id == R.id.first) setFragment(new FirstFragment());
-                else if (id == R.id.second) setFragment(new SecondFragment());
-                else if (id == R.id.third) setFragment(new ThirddFragment());
-
-
+                if (id == R.id.first) {
+                    setFragment(new FirstFragment());
+                    item.setChecked(true); //с помощью этого метода связывает фрагменты с navigation bar
+                }
+                else if (id == R.id.second) {
+                    setFragment(new SecondFragment());
+                    item.setChecked(true);
+                }
+                else if (id == R.id.third) {
+                    setFragment(new ThirddFragment());
+                    item.setChecked(true);
+                }
                 return false;
             }
         });
+        FirstFragment firstFragment = new FirstFragment();
+        setFragment(firstFragment);
     }
 
     @Override

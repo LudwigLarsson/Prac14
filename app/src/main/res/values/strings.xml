@@ -1,5 +1,14 @@
 <resources>
     <string name="app_name">Prac14</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="change_color">Change color</string>
+
+    <string name="yellow">Yellow</string>
+    <string name="green">Green</string>
+    <string name="pink">Pink</string>
+
+    <string name="plus">Plus 1</string>
+    <string name="minus">Minus 1</string>
+
+    <string name="count_button">Counter</string>
 </resources>
