@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/setting_item"
+    android:title="Настройки" />
+
+    <item
+        android:id="@+id/addition_item"
+        android:title="Дополнительно" >
+
+        <menu>
+            <item
+            android:id="@+id/first_item"
+                android:title="Первый"/>
+
+            <item
+                android:id="@+id/second_time"
+                android:title="Второй"/>
+
+        </menu>
+
+    </item>
+
+
+</menu>
