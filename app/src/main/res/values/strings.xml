@@ -11,4 +11,7 @@
     <string name="minus">Minus 1</string>
 
     <string name="count_button">Counter</string>
+
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
 </resources>
